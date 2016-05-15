@@ -1,0 +1,504 @@
+/*******************************
+    SLIDE FROM TOP ANIMATION
+    Usage: <div class="at-view-slide-in-top at-view-slide-out-top"></div>
+*******************************/
+.at-view-slide-in-top.ng-enter {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform: translate(0px, -100%);
+    -moz-transform: translate(0px, -100%);
+    -ms-transform: translate(0px, -100%);
+    -o-transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.at-view-slide-in-top.ng-enter-active {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1;
+    position: relative;
+}
+
+.at-view-slide-out-top.ng-leave {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1;
+    z-index: 3;
+    position: relative;
+}
+
+.at-view-slide-out-top.ng-leave-active {
+    -webkit-transform: translate(0px, -100%);
+    -moz-transform: translate(0px, -100%);
+    -ms-transform: translate(0px, -100%);
+    -o-transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
+    opacity: 0;
+}
+
+/*******************************
+    EMERGE AND SCALE ANIMATION
+    Usage: <div class="at-view-emerge at-view-scale-out"></div>
+*******************************/
+.at-view-emerge.ng-enter {
+    -webkit-transition-property: opacity, -webkit-transform;
+    -moz-transition-property: opacity, -moz-transform;
+    -o-transition-property: opacity, -o-transform;
+    transition-property: opacity transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    -webkit-transform: rotateX(-60deg) translate(0, 200%);
+    -moz-transform: rotateX(-60deg) translate(0, 200%);
+    -ms-transform: rotateX(-60deg) translate(0, 200%);
+    -o-transform: rotateX(-60deg) translate(0, 200%);
+    transform: rotateX(-60deg) translate(0, 200%);
+    opacity: 0;
+    z-index: 4;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.at-view-emerge.ng-enter-active {
+    -webkit-transform: rotateX(0deg) translate(0, 0);
+    -moz-transform: rotateX(0deg) translate(0, 0);
+    -ms-transform: rotateX(0deg) translate(0, 0);
+    -o-transform: rotateX(0deg) translate(0, 0);
+    transform: rotateX(0deg) translate(0, 0);
+    opacity: 1;
+}
+
+.at-view-scale-out.ng-leave {
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.at-view-scale-out.ng-leave-active {
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+}
+
+/*******************************
+    SLIDE FROM BOTTOM ANIMATION
+    Usage: <div class="at-view-slide-in-bottom at-view-slide-out-bottom"></div>
+*******************************/
+.at-view-slide-in-bottom.ng-enter {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform: translate(0px, 100%);
+    -moz-transform: translate(0px, 100%);
+    -ms-transform: translate(0px, 100%);
+    -o-transform: translate(0px, 100%);
+    transform: translate(0px, 100%);
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.at-view-slide-in-bottom.ng-enter-active {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1;
+    position: absolute;
+}
+
+.at-view-slide-out-bottom.ng-leave {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1;
+    z-index: 3;
+    position: absolute;
+}
+
+.at-view-slide-out-bottom.ng-leave-active {
+    -webkit-transform: translate(0px, 100%);
+    -moz-transform: translate(0px, 100%);
+    -ms-transform: translate(0px, 100%);
+    -o-transform: translate(0px, 100%);
+    transform: translate(0px, 100%);
+    opacity: 0;
+}
+
+/*******************************
+    VERTICAL FLIP ANIMATION
+    Usage: <div class="at-view-flip-in-vertical at-view-flip-out-vertical"></div>
+*******************************/
+.at-view-flip-out-vertical.ng-leave {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+}
+
+.at-view-flip-out-vertical.ng-leave-active {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    z-index: 10;
+}
+
+.at-view-flip-in-vertical.ng-enter {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.at-view-flip-in-vertical.ng-enter-active {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    z-index: 20;
+}
+
+/*******************************
+    FADE ANIMATION
+    Usage: <div class="at-view-fade-in at-view-fade-out"></div>
+*******************************/
+.at-view-fade-in.ng-enter {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.at-view-fade-in.ng-enter-active {
+    opacity: 1;
+}
+
+.at-view-fade-out.ng-leave {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+.at-view-fade-out.ng-leave-active {
+    opacity: 0;
+}
+
+/*******************************
+    FADE ANIMATION SIMPLE
+    Usage: <div class="at-view-fade-in-simple at-view-fade-out-simple"></div>
+*******************************/
+.at-view-fade-in-simple.ng-enter {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+
+.at-view-fade-in-simple.ng-enter-active {
+    opacity: 1;
+}
+
+.at-view-fade-out-simple.ng-leave {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+
+.at-view-fade-out-simple.ng-leave-active {
+    opacity: 0;
+}
+
+/*******************************
+    FADE ANIMATION SPECIAL
+    Usage: <div class="at-view-fade-in-special at-view-fade-out-special"></div>
+*******************************/
+.at-view-fade-in-special.ng-enter {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    opacity: 0;
+}
+
+.at-view-fade-in-special.ng-enter-active {
+    opacity: 1;
+}
+
+.at-view-fade-out-special.ng-leave {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    opacity: 1;
+}
+
+.at-view-fade-out-special.ng-leave-active {
+    opacity: 0;
+}
+
+/*******************************
+    FLY IN RIGHT
+    Usage: <div class="slide-in-right slide-out-right"></div>
+*******************************/
+.slide-in-right.ng-enter {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: relative;
+    right: -1500px;
+    opacity: 0;
+}
+
+.slide-in-right.ng-enter-active {
+    right: 0px;
+    opacity: 1;
+}
+
+.slide-out-right.ng-leave {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    right: 0px;
+    opacity: 1;
+}
+
+.slide-out-right.ng-leave-active {
+    right: -1500px;
+    opacity: 0;
+}
+
+/*******************************
+    FLY IN RIGHT
+    Usage: <div class="slide-in-left-special slide-out-left-special"></div>
+*******************************/
+.slide-in-left-special.ng-enter {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    position:relative;
+    left: -1500px;
+}
+
+.slide-in-left-special.ng-enter-active {
+    position:relative;
+    left: 0px;
+}
+
+.slide-out-left-special.ng-leave {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    position:relative;
+    left: 0px;
+}
+
+.slide-out-left-special.ng-leave-active {
+    position:relative;
+    left: -1500px;
+}
+
+
+
+/*******************************
+    FLY IN LEFT
+    Usage: <div class="slide-in-left slide-out-left"></div>
+*******************************/
+.slide-in-left.ng-enter {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: relative;
+    left: -1500px;
+    opacity: 0;
+}
+
+.slide-in-left.ng-enter-active {
+    left: 0px;
+    opacity: 1;
+}
+
+.slide-out-left.ng-leave {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    left: 0px;
+    opacity: 1;
+}
+
+.slide-out-left.ng-leave-active {
+    left: -1500px;
+    opacity: 0;
+}

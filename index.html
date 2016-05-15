@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="sv-SE">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js'>
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+    <title>Sand</title>
+    <!--Vendor Styling-->
+    <link rel="stylesheet" media="screen" type="text/css" href="vendor/css/flexboxgrid.min.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="vendor/css/ui-bootstrap-custom-1.1.2-csp.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="vendor/css/prettyJSON.min.css">
+    <!--Custom Styling-->
+    <link rel="stylesheet" media="screen" type="text/css" href="/dist/css/sand.min.css">
+</head>
+<body ng-app="sand" ng-class="{'loading' : $root.loading}" class="sand-app">
+    <div class="loader"></div>
+    <header></header>
+
+    <ui-view class="at-view-slide-in-top at-view-slide-out-top app-view container-fluid" ng-animate></ui-view>
+
+    <!--Vendor scripts-->
+    <script src="vendor/js/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script src="vendor/js/angular.min.js" type="text/javascript"></script>
+    <script src="vendor/js/angular-ui-router.js" type="text/javascript"></script>
+    <script src="vendor/js/angular-animate.js" type="text/javascript"></script>
+    <script src="vendor/js/ng-prettyjson.min.js" type="text/javascript"></script>
+    <script src="vendor/js/ui-bootstrap-custom-tpls-1.1.2.min.js" type="text/javascript"></script>
+    <!--App scripts-->
+    <script src="/dist/js/sand.min.js" type="text/javascript"></script>
+</body>
+</html>
