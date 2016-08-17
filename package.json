@@ -1,18 +1,18 @@
 {
-  "name": "okq8",
-  "title": "okq8",
-  "description": "A scaffold for oauth",
+  "name": "sand",
+  "title": "sand",
+  "description": "A scaffold for a sandbox",
   "version": "1.0.0",
-  "homepage": "http://kraftvaerk.com/",
+  "homepage": "http://rcdk.net/",
   "author": {
-    "name": "Frontend Team",
-    "url": "http://kraftvaerk.com/"
+    "name": "rcdk",
+    "url": "http://rcdk.net/"
   },
   "config": {
     "appName": "sand"
   },
   "repository": {
-    "type": "svn",
+    "type": "git",
     "url": ""
   },
   "main": "gruntfile.js",
